@@ -1,0 +1,68 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.backgroundVideo {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+.backgroundVideo video {
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 100%;
+}
+
+.content {
+    z-index: 1;
+    text-align: center;
+    animation: flicker 10s;
+    padding: 20px;
+}
+.content img {
+    height: 12vh;
+    display: inline-block;
+}
+.content p {
+    text-transform: uppercase;
+    font-weight: bold; 
+    font-size: 0.6em;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+@keyframes flicker {
+    0% {opacity:0}
+    3% {opacity:1}
+    6% {opacity:1}
+    7% {opacity:0}
+    8% {opacity:1}
+    9% {opacity:0}
+    10% {opacity:1}
+    99% {opacity:1}
+    100% {opacity:0}
+}
+@-webkit-keyframes flicker{
+    0% {opacity:0}
+    3% {opacity:1}
+    6% {opacity:1}
+    7% {opacity:0}
+    8% {opacity:1}
+    9% {opacity:0}
+    10% {opacity:1}
+    99% {opacity:1}
+    100% {opacity:0}
+}

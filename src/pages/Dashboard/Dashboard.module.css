@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 80px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.container h1, .container h2, .container h3 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 0.8em 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 30px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.center {
+    width: 900px;
+    border-radius: 6px;
+    background: rgb(53, 53, 53);
+    padding: 20px;
+    margin: 20px;
+}
+@media screen and (max-width: 900px) {
+    .center {
+        width: 100%;
+    }
+}
